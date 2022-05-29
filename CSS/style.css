@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223, 202, 174);
+}
+
+.indexGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 75% 10%;
+    grid-gap: 20px;
+    grid-template-areas:
+        "menu       menu"
+        "mainIndex  mainIndex"
+        "footer     footer";
+}
+
+.menu {
+    color: aquamarine;
+    list-style: none;
+    border: 5px inset aquamarine;
+    background-color: rgb(57, 109, 83);
+    border-style: double;
+    height: 100px;
+    word-spacing: 170px;
+    grid-area: menu;
+
+}
+
+.navegador {
+    list-style: none;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    ;
+
+}
+
+nav ul li {
+    font-size: 1.8rem;
+    color: rgb(180, 190, 187);
+    font-family: 'Reenie Beanie', cursive;
+
+    margin: 15px;
+    padding-top: 5px;
+
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.titulo {
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+
+}
+
+.imagen {
+    padding: 50px;
+    margin-left: 450px;
+    width: 90%;
+    height: 90%;
+    margin: 5%;;
+    border: 30px groove black;
+    border-top-left-radius: 10px;
+    border-color: aquamarine;
+    background-color: cornflowerblue;
+    background-image: linear-gradient(rgb(233, 159, 159),rgb(114, 133, 240));
+
+}
+
+.mainDiv {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    grid-area: mainIndex;
+}
+
+.mainGrid {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas:
+        "titulo     titulo"
+        "comentario imgMaral"
+        "comentario imgMaral"
+}
+
+.menu {
+    color: aquamarine;
+    list-style: none;
+    border: 5px inset aquamarine;
+    background-color: rgb(57, 109, 83);
+    border-style: double;
+    box-sizing: border-box;
+    height: 190px;
+    word-spacing: 170px;
+    grid-area: menu;
+}
+
+.titulo {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    grid-area: titulo;
+}
+
+.comentario {
+    padding: 70px 20px 70px 20px;
+    margin: 5%;
+    ;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    border: 10px solid black;
+    background-color: cornflowerblue;
+    grid-area: comentario;
+    padding: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgMaral {
+    align-items: center;
+    grid-area: imgMaral;
+    transform: rotate(02deg);
+    padding-top: 10px;
+    
+}
+
+.imagen {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    border: 30px groove black;
+    border-top-left-radius: 10px;
+    border-color: aquamarine;
+    background-color: cornflowerblue;
+
+}
+
+.footer {
+    background-color: rgb(196, 184, 207);
+    text-align: center;
+    padding: 60px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    grid-area: footer;
+}
+
+@media screen and (max-width:952px) {
+    .menu {
+        background-color: rgb(57, 109, 83);
+    }
+
+    .mainGrid {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 40% 40%;
+        grid-template-areas:
+            "titulo     titulo"
+            "comentario comentario"
+            "imgMaral imgMaral"
+    }
+
+    .titulo {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .comentario {
+        margin: 0px;
+    }
+
+    .imgMaral {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .imagen {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+}
+
+.footer {
+    background-color: rgb(196, 184, 207);
+    text-align: center;
+    padding: 60px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    grid-area: footer;
+}
+
+
+
+
+.Prod {
+    text-align: center;
+
+}
+
+#placard {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#muebles {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtitus {
+    text-decoration: underline;
+    list-style: inside;
+}
+
+.parrafo {
+    margin: 50px;
+    padding: 100px;
+    font-family: 'Reenie Beanie', cursive;
+    border: 5px solid black;
+    border-color: aqua;
+    border-width: 20px;
+    border-bottom: none;
+    border-top: none;
+
+}
+
+.form {
+    text-align: center;
+}
+
+.trabajos {
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 50px;
+}
+
+.imgvid {
+    text-align: center;
+}
+
+.Prod {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    grid-template-areas:
+        "titulo2 subtitus  imgStd"
+        "titulo2 subtitusP imgPlacard";
+
+
+
+}
+
+.titulo2 {
+    grid-area: titulo2;
+    margin-top: 400px;
+    font-size: 40px;
+    padding-right: 100px;
+}
+
+.subtitus {
+    grid-area: subtitus;
+    margin-top: 200px;
+    text-decoration: none;
+    font-size: 40px;
+    padding-right: 100px;
+}
+
+.subtitusP {
+    grid-area: subtitusP;
+    margin-top: 150px;
+    font-size: 40px;
+    padding-right: 100px;
+}
+
+.imgStd {
+    grid-area: imgStd;
+    padding-top: 60px;
+
+}
+
+.imgPlacard {
+    grid-area: imgPlacard;
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .menu {
+        width: 600;
+
+        background-color: rgb(57, 109, 83);
+    }
+
+
+    .navegador {
+        width: 200px;
+    }
+
+    .titulo {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+
+    }
+
+}
+
+.imgMaral{
+    animation-name: img-Maral;
+    animation-duration: 3s;
+    animation-iteration-count:inherit;
+    animation-timing-function: linear;
+
+}
+
+@keyframes img-Maral{
+    from{
+        transform: scale(1);
+    }
+
+    to{ 
+transform: scale(1.1);
+    }
+}
